@@ -1,0 +1,28 @@
+<div class="container p-5">
+  <div class="columns is-mobile is-justify-content-center mb-5">
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          <h3 class="has-text-centered mb-5">{{ title }}</h3>
+          <div class="px-4 has-text-centered">
+            <input
+              class="input is-hovered"
+              type="text"
+              placeholder="Nombre de la banda"
+              [(ngModel)]="band"
+            />
+            <button
+              class="button is-link is-light mt-4"
+              type="submit"
+              (click)="searchTracks(band)"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <app-card-track [tracks]="tracks" [hasFavSelection]="true"/>
+</div>

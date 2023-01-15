@@ -1,0 +1,20 @@
+<nav
+  class="navbar is-flex is-justify-content-end"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div
+    id="navbarTracks"
+    class="is-flex is-justify-content-end"
+    *ngFor="let navItem of navItems"
+  >
+    <a
+      routerLink="{{ navItem.path }}"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      class="navbar-item"
+    >
+      {{ navItem.title }}
+    </a>
+  </div>
+</nav>

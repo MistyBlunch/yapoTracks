@@ -1,0 +1,46 @@
+<div class="track-results-container mt-5">
+  <div class="card" *ngFor="let track of tracks">
+    <span
+      *ngIf="hasFavSelection"
+      class="mdi mdi-star favorite-icon"
+      (click)="saveToFavs(track)"
+    ></span>
+    <div class="card-image">
+      <img
+        class="image is-128x128 mx-auto image-track"
+        src="{{ track.imageUrl100 }}"
+      />
+    </div>
+    <div class="card-content pt-3">
+      <div class="media mb-0">
+        <a href="{{ track.previewUrl }}">
+          <p class="title is-5">{{ track.name }}</p>
+        </a>
+      </div>
+      <div class="content">
+        <ul class="mt-2 ml-5">
+          <li>
+            <strong> Álbum: </strong>
+            <span>{{ track.collectionName }}</span>
+          </li>
+          <li *ngIf="track.primaryGenreName">
+            <strong> Género: </strong>
+            <span>{{ track.primaryGenreName }}</span>
+          </li>
+          <li *ngIf="track.trackPrice">
+            <strong> Precio: </strong>
+            <span> ${{ track.trackPrice }}</span>
+          </li>
+          <li *ngIf="track.releaseDate">
+            <strong> Fecha de publicación: </strong>
+            <span>
+              <time datetime="2016-1-1">
+                {{ track.releaseDate | date : "dd-MM-yyyy" }}
+              </time>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

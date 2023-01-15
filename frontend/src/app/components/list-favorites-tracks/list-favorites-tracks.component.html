@@ -1,0 +1,6 @@
+
+<div class="container p-5">
+	<h3 class="has-text-centered">{{title}}</h3>
+	<app-card-track [tracks]="tracks"/>
+	<p *ngIf="tracks.length === 0" class="is-size-6 has-text-centered">{{noTracks}}</p>
+</div>
