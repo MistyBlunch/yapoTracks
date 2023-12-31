@@ -8,3 +8,5 @@
 * Para guardas tus canciones favoritas solo le tendrás que dar Click a la estrellita que tiene cada canción.
 
 * Las canciones guardadas las podrás ver en la vista de Canciones Favoritas.
+
+![Screenshot 2023-12-31 035115](https://github.com/MistyBlunch/yapoTracks/assets/29315728/5d554839-e378-4066-bc48-4f7fc4270c5f)
