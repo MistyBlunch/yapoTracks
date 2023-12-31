@@ -7,7 +7,7 @@
 ## Pasos para ejecutar el backend
 
 1. Reemplazamos las variables de entorno.
-2. Instalamos las dependencias `yarn install`
+2. Instalamos las dependencias `yarn`
 3. Copiar el contenido de `.env.example` a `.env` y completar todos los campos.
 4. Para correr el servidor ejecutar `yarn dev`
 
